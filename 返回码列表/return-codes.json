@@ -1,0 +1,912 @@
+[
+  {
+    "node": {
+      "ret_code": "0000",
+      "ret_msg": "交易成功",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "0106",
+      "ret_msg": "签约银行卡信息查询失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1000",
+      "ret_msg": "支付授权令牌失效或错误",
+      "description": "超过30分钟，或者其他原因导致上送的支付授权令牌失效，需要重新对该订单做银行卡支付预处理，重新获取支付授权令牌"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1001",
+      "ret_msg": "商户请求签名错误",
+      "description": "验签错误"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1002",
+      "ret_msg": "第三方单号重复",
+      "description": "原订单已请求申请成功"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1003",
+      "ret_msg": "正在支付中,请稍后",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1004",
+      "ret_msg": "商户请求参数校验错误（具体参数名）",
+      "description": "校验商户请求参数"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1005",
+      "ret_msg": "支付处理失败",
+      "description": "因各种原因，导致支付失败，包括用户签约失败，余额不足，银行各种限制"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1006",
+      "ret_msg": "支付单创建失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1007",
+      "ret_msg": "网络链接繁忙",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1008",
+      "ret_msg": "商户请求IP错误",
+      "description": "IP未报备"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1009",
+      "ret_msg": "暂停商户支付服务，请联系连连银通客服",
+      "description": "因各种原因，连连银通暂停商户支付服务"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1014",
+      "ret_msg": "日累计金额或笔数超限",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1016",
+      "ret_msg": "交易金额超限",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1019",
+      "ret_msg": "单笔金额超限",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1100",
+      "ret_msg": "无效卡号",
+      "description": "该商户暂不支持该卡或卡号输入有误,请更换其他银行卡"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1101",
+      "ret_msg": "卡已挂失",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1102",
+      "ret_msg": "无此发卡方",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1103",
+      "ret_msg": "银行卡有效期或CVV2错误",
+      "description": "您的卡已过期或者您输入的有效期不正确"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1104",
+      "ret_msg": "卡密码错误",
+      "description": "卡密码错误，请重试"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1105",
+      "ret_msg": "卡号在黑名单中",
+      "description": "卡号在黑名单中或者卡已被限制"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1106",
+      "ret_msg": "允许的输入PIN次数超限",
+      "description": "密码错误次数超限"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1107",
+      "ret_msg": "您的银行卡暂不支持在线支付业务",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1108",
+      "ret_msg": "您输入的证件号、姓名或手机号有误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1109",
+      "ret_msg": "卡号和证件号不符",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1110",
+      "ret_msg": "卡状态异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1111",
+      "ret_msg": "交易异常，支付失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1112",
+      "ret_msg": "证件号有误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1113",
+      "ret_msg": "持卡人姓名有误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1114",
+      "ret_msg": "手机号有误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1115",
+      "ret_msg": "该卡未预留手机号",
+      "description": "用户签约的卡未在银行预留手机"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1200",
+      "ret_msg": "用户选择的银行暂不支持，请重新选择其他银行进行支付/签约",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1201",
+      "ret_msg": "银行卡变更失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1202",
+      "ret_msg": "银行卡查询失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1805",
+      "ret_msg": "暂不支持该银行",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1900",
+      "ret_msg": "短信码校验错误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1901",
+      "ret_msg": "短信码已失效",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "1902",
+      "ret_msg": "该卡交易金额超出免密限额",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "2003",
+      "ret_msg": "支付单创建",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "2004",
+      "ret_msg": "签约处理中",
+      "description": "签约交易银行端处理超时或者同步无法返回最终结果"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "2005",
+      "ret_msg": "原交易已在进行处理，请勿重复提交",
+      "description": "对相同订单进行重复提交支付请求"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "2006",
+      "ret_msg": "交易已过期",
+      "description": "对原未付款的订单发起重新支付时，原支付单已过期关闭"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "2007",
+      "ret_msg": "交易已支付成功",
+      "description": "对已成功的交易重复支付时，系统返回原交易已支付成功"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "2008",
+      "ret_msg": "交易处理中",
+      "description": "交易中间状态，金融端扣款正在处理中，无法同步返回最终结果或者交易异常，请等待支付系统异步通知方式通知，也可以通过发起查询交易查询该笔订单状态"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3001",
+      "ret_msg": "非法商户",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3002",
+      "ret_msg": "用户生成错误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3003",
+      "ret_msg": "签约信息不存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3004",
+      "ret_msg": "用户解约失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3005",
+      "ret_msg": "查询跨度不得高于3个月",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3006",
+      "ret_msg": "用户不存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3007",
+      "ret_msg": "[user_id]查询不存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3008",
+      "ret_msg": "查询截止日期错误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3009",
+      "ret_msg": "重复签约",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3010",
+      "ret_msg": "商户支付权限不足",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "3011",
+      "ret_msg": "用户签约信息不存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "4000",
+      "ret_msg": "解约失败，请联系发卡行",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5001",
+      "ret_msg": "卡bin校验失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5002",
+      "ret_msg": "原始交易不存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5003",
+      "ret_msg": "退款金额错误",
+      "description": "冲正金额和原交易金额不符"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5004",
+      "ret_msg": "商户状态异常，无法退款",
+      "description": "商户账户被冻结等非法状态时，不允许进行退款操作"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5005",
+      "ret_msg": "退款失败，请重试",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5006",
+      "ret_msg": "商户账户余额不足",
+      "description": "账户余额不足，无法完成退款"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5007",
+      "ret_msg": "累计退款金额大于原交易金额",
+      "description": "累计退款金额大于原交易金额"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5008",
+      "ret_msg": "原交易未成功",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5501",
+      "ret_msg": "大额行号查询失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5502",
+      "ret_msg": "信用卡不支持提现",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5503",
+      "ret_msg": "商户提现权限不足",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5504",
+      "ret_msg": "商户操作权限不足",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5505",
+      "ret_msg": "该银行未进行配置，请联系客服",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5506",
+      "ret_msg": "商户备注解析失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "5601",
+      "ret_msg": "支付方式和卡类型不匹配",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "6001",
+      "ret_msg": "卡余额不足",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "6002",
+      "ret_msg": "该卡号未成功进行首次验证",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "6601",
+      "ret_msg": "获取银行请求地址失败，请稍后重试",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "7001",
+      "ret_msg": "用户已存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "7017",
+      "ret_msg": "金额不正确",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "7018",
+      "ret_msg": "新增银行卡用户信息不一致",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "7777",
+      "ret_msg": "需要补全签约信息",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8000",
+      "ret_msg": "用户信息不存在",
+      "description": "验证用户信息不存在"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8001",
+      "ret_msg": "文件异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8002",
+      "ret_msg": "生成文件异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8003",
+      "ret_msg": "解析文件异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8006",
+      "ret_msg": "汇兑异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8010",
+      "ret_msg": "付款人信息不存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8099",
+      "ret_msg": "实名认证失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8101",
+      "ret_msg": "无此扣款计划信息",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8102",
+      "ret_msg": "当前扣款计划已执行，请勿重复执行",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8103",
+      "ret_msg": "还款计划通知短信发送失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8104",
+      "ret_msg": "扣款失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8105",
+      "ret_msg": "变更还款次数超过限制",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8106",
+      "ret_msg": "该签约协议号未授权该扣款协议号进行扣款",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8107",
+      "ret_msg": "扣款计划校验失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8108",
+      "ret_msg": "变更计划失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8109",
+      "ret_msg": "计划保存失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8110",
+      "ret_msg": "验证码错误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8111",
+      "ret_msg": "用户查询失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8112",
+      "ret_msg": "变更计划状态失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8113",
+      "ret_msg": "分期计划不存在",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8114",
+      "ret_msg": "扣款方式不符",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8115",
+      "ret_msg": "还款卡授权失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8116",
+      "ret_msg": "定时任务执行失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8117",
+      "ret_msg": "幂等检查异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8888",
+      "ret_msg": "短信已下发，需要再次验证",
+      "description": "需要再次进行短信验证"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8901",
+      "ret_msg": "没有记录",
+      "description": "根据提供的查询条件未获得结果"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "8911",
+      "ret_msg": "没有风控记录",
+      "description": "没有风控记录"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9000",
+      "ret_msg": "银行维护中，请稍后再试",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9002",
+      "ret_msg": "报文解析异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9091",
+      "ret_msg": "创建支付失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9092",
+      "ret_msg": "支付单号与订单号不一致",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9093",
+      "ret_msg": "无对应的支付单信息",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9094",
+      "ret_msg": "请求银行扣款失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9700",
+      "ret_msg": "短信验证码错误",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9701",
+      "ret_msg": "短信验证码和手机不匹配",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9702",
+      "ret_msg": "验证码错误次数超过最大次数,请重新获取进行验证",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9703",
+      "ret_msg": "短信验证码失效,请重新获取",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9704",
+      "ret_msg": "短信发送异常,请稍后重试",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9901",
+      "ret_msg": "请求报文非法",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9902",
+      "ret_msg": "接口调用异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9907",
+      "ret_msg": "银行编码与卡不一致",
+      "description": "选择的银行与卡所属银行不一致"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9910",
+      "ret_msg": "风险等级过高",
+      "description": "分控返回风险值过高，导致交易失败"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9911",
+      "ret_msg": "金额超过指定额度",
+      "description": "金额超过指定额度"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9912",
+      "ret_msg": "该卡不支持",
+      "description": "该卡不支持"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9913",
+      "ret_msg": "该卡已签约成功 ",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9920",
+      "ret_msg": "退款失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9921",
+      "ret_msg": "退款查询失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9970",
+      "ret_msg": "银行系统日切处理中",
+      "description": "银行系统正在进行日终处理，稍后可重新发送交易"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9983",
+      "ret_msg": "商户订单号重复",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9990",
+      "ret_msg": "银行交易出错，{银行返回的错误信息}，请稍后重试",
+      "description": "银行交易出错，{银行返回的错误信息}，请稍后重试"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9991",
+      "ret_msg": "银行交易出错，请联系客服，客服热线客服热线：4000188888",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9999",
+      "ret_msg": "系统错误",
+      "description": null
+    }
+  }
+]
