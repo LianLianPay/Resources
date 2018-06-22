@@ -3,7 +3,7 @@
     "node": {
       "ret_code": "0000",
       "ret_msg": "交易成功",
-      "description": null
+      "description": "表示当次请求被连连成功受理， 不代表最终收款或付款结果"
     }
   },
   {
