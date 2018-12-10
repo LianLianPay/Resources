@@ -10,6 +10,8 @@
 
 * **商户站介绍及操作说明**。 介绍连连[商户站](https://b.lianlianpay.com/trader/login.htm)的内容及操作说明。
 
-* **Logo**, 包括连连Logo与银行Logo素材及使用说明。
+* **Logo**，包括连连Logo与银行Logo素材及使用说明。
 
 * **报备及配置**， 含向连连报备基本信息及特殊配置申请时所用模板。
+
+* **ApplePay**，[接入ApplePay相关文档资源](https://apple.lianlianpay.com/OpenPlatform/document_download.jsp)
