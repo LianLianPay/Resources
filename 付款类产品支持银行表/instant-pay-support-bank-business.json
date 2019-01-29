@@ -62,7 +62,7 @@
       "bank_name_short": "光大银行",
       "support_time_amount_less_than_50000": "自然日：03:00:00-22:55:00",
       "support_time_amount_more_than_50000": "自然日：03:00:00-22:55:00",
-      "require_business_info_flag": "否"
+      "require_business_info_flag": "是"
     }
   },
   {
@@ -93,9 +93,9 @@
       "bank_code": "01000000",
       "bank_name": "中国邮政储蓄银行",
       "bank_name_short": "邮储银行",
-      "support_time_amount_less_than_50000": "自然日：09:00:00-16:30:00",
-      "support_time_amount_more_than_50000": "工作日：09:00:00-16:30:00",
-      "require_business_info_flag": "否，建议提供"
+      "support_time_amount_less_than_50000": "自然日：00:00:00-23:59:59",
+      "support_time_amount_more_than_50000": "自然日：00:00:00-23:59:59",
+      "require_business_info_flag": "是"
     }
   },
   {
@@ -203,8 +203,8 @@
       "bank_code": "04031000",
       "bank_name": "北京银行",
       "bank_name_short": "北京银行",
-      "support_time_amount_less_than_50000": "自然日：09:00:00-16:30:00",
-      "support_time_amount_more_than_50000": "工作日：09:00:00-16:30:00",
+      "support_time_amount_less_than_50000": "自然日：00:00:00-23:59:59",
+      "support_time_amount_more_than_50000": "自然日：00:00:00-23:59:59",
       "require_business_info_flag": "是"
     }
   },
@@ -282,6 +282,17 @@
       "bank_name_short": "浙商银行",
       "support_time_amount_less_than_50000": "自然日：09:00:00-16:30:00",
       "support_time_amount_more_than_50000": "工作日：09:00:00-16:30:00",
+      "require_business_info_flag": "是"
+    }
+  },
+  {
+    "node": {
+      "sequence_id": 27,
+      "bank_code": "03110000",
+      "bank_name": "恒丰银行",
+      "bank_name_short": "恒丰银行",
+      "support_time_amount_less_than_50000": "自然日：00:00:00-23:59:59",
+      "support_time_amount_more_than_50000": "自然日：00:00:00-23:59:59",
       "require_business_info_flag": "是"
     }
   }
