@@ -15,3 +15,5 @@
 * **报备及配置**， 含向连连报备基本信息及特殊配置申请时所用模板。
 
 * **ApplePay**，[接入ApplePay相关文档资源](https://apple.lianlianpay.com/OpenPlatform/document_download.jsp)
+
+* **信息安全**，含连连支付信息安全白皮书。
