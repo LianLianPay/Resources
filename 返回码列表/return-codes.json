@@ -1109,7 +1109,7 @@
     "node": {
       "ret_code": "LE1006",
       "ret_msg": "用户中途取消操作",
-      "description": bull
+      "description": null
     }
   },
   {
