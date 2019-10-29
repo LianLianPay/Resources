@@ -30,7 +30,7 @@
   {
     "node": {
       "ret_code": "1002",
-      "ret_msg": "第三方单号重复",
+      "ret_msg": "(实时付款)第三方单号重复",
       "description": "原订单已请求申请成功"
     }
   },
@@ -501,6 +501,13 @@
       "ret_code": "4015",
       "ret_msg": "大额行号查询失败",
       "description": "(实时付款)对公时大额行号查询失败返回，传联行号或者核实支行信息是否正确"
+    }
+  },  
+  {
+    "node": {
+      "ret_code": "4572",
+      "ret_msg": "支付渠道拦截，请联系客服4000188888[4572]",
+      "description": "建议联系连连的客服确认原因"
     }
   },
   {
@@ -1018,6 +1025,118 @@
     "node": {
       "ret_code": "9991",
       "ret_msg": "银行交易出错，请联系客服，客服热线客服热线：4000188888",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE0000",
+      "ret_msg": "用户操作完成，请通过轮询查询方式获取订单支付结果",
+      "description": "请通过订单查询接口查询订单结果"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE0001",
+      "ret_msg": "用户中途取消支付操作",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE0002",
+      "ret_msg": "交易在WAP中处理完成",
+      "description": "请通过订单查询接口查询订单结果"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE0003",
+      "ret_msg": "交易在APP中处理完成",
+      "description": "请通过订单查询接口查询订单结果"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE0011",
+      "ret_msg": "交易异常，该SDK并未支持此手机银行",
+      "description": null
+    }
+  },  
+  {
+    "node": {
+      "ret_code": "LE0012",
+      "ret_msg": "商户请求参数校验错误[参数名]",
+      "description": null
+    }
+  },  
+  {
+    "node": {
+      "ret_code": "LE1001",
+      "ret_msg": "支付处理失败!",
+      "description": "支付处理失败也可能是因为没有导入银行的SDK"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE1002",
+      "ret_msg": "交易异常，手机银行IP被禁止",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE1003",
+      "ret_msg": "交易已支付成功",
+      "description": "请通过订单查询接口查询订单结果"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE1004",
+      "ret_msg": "商户请求参数校验错误 [参数名]",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE1005",
+      "ret_msg": "请求处理失败",
+      "description": "appid与包名不匹配"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE1006",
+      "ret_msg": "用户中途取消操作",
+      "description": bull
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE1007",
+      "ret_msg": "网路链接繁忙",
+      "description": "可能请求到了连连的测试环境"
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE2102",
+      "ret_msg": "获取手机权限失败",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE9001",
+      "ret_msg": "请求接口报文返回异常",
+      "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "LE9999",
+      "ret_msg": "系统繁忙，请稍候重试",
       "description": null
     }
   },
