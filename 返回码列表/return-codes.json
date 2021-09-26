@@ -246,6 +246,13 @@
   },
   {
     "node": {
+      "ret_code": "1204",
+      "ret_msg": "系统繁忙，请稍后重试",
+      "description": null
+    }
+  },
+  {
+    "node": {
       "ret_code": "1805",
       "ret_msg": "暂不支持该银行",
       "description": null
@@ -949,6 +956,13 @@
       "ret_code": "9902",
       "ret_msg": "接口调用异常",
       "description": null
+    }
+  },
+  {
+    "node": {
+      "ret_code": "9904",
+      "ret_msg": "参数{%s}和原创建支付单时不一致",
+      "description": "原单支付时的参数要报持一致，如用户号、金额等"
     }
   },
   {
